@@ -1,0 +1,9 @@
+<%= form_for @post,:url =>{:action => "create", :id =>@post} do |form| %>
+
+<%= "Title" %></br>
+  <%= form.text_field :title , :required => true  %></br>
+  <%= "Body" %></br>
+  <%= form.text_area :body %></br>
+  <%= form.submit %>
+  <%= link_to 'Back', {:action => 'index'} %>
+<% end -%>

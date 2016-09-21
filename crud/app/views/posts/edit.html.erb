@@ -1,0 +1,7 @@
+<%= form_for @post,:url =>{:action => "update", :id =>@post} do |form| %>
+<%= "Title" %></br>
+  <%= form.text_field :title %></br>
+  <%= "Body" %></br>
+  <%= form.text_area :body %></br>
+  <%= form.submit %>
+<% end -%>
